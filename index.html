@@ -6,93 +6,103 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
     <title>News</title>
-    <!-- <style>
+    <style>
         *{
             outline: 1px solid red;
         }
-    </style> -->
+    </style>
 </head>
-<body>
-    <div class="container p-8 m-auto min-w-screen min-h-screen md:flex md:flex-col justify-between">
-        <nav class="md:gap-8 md:flex md:flex-row md:align-middle">
-            <img src="/assets/images/logo.svg" alt="" class="md:object-contain md:h-8">
-            <ul class="h-6 md:flex md:flex-row md:space-x-6 md:justify-end md:gap-x-2 hidden">
-                <li class="">Home</li>
-                <li>News</li>
-                <li>Popular</li>
-                <li>Trending</li>
-            </ul>
-        </nav>
-        <main class="flex-1 flex-row">
-            <figure class="w-full h-full m-0">
-                <img src="/assets/images/image-web-3-desktop.jpg" alt="">
-            </figure>
-            <!-- insidemain -->
-            <div class="flex-2 flex-row">
-                <div class="writeup bg-white m-0 md:flex md:flex-col text-black h-5/5 flex flex-row">
-                    <h2 class="text-8xl">The Bright <br>Future of <br> Web 3?</h2>
-                </div>
-                <div class="writeupp ">
-                    <p class="flex flex-col justify-items-center m-0 leading-10 box-border text-sm">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p> 
-                    <h1 class="inline text-base w-4/5">
-                        <a href="#" class="decoration-0 text-white bg-red-600 p-y-4 inline w-2/5 text-2xl">READ MORE</a>
-                      </h1> 
-                </div>
+<body class="">
+    <div class="container p-8 m-auto w-72 min-h-screen md:flex md:flex-col lg:flex lg:flex-col lg:gap-10">
+        <header class="flex justify-between">
+            <img src="./assets/images/logo.svg" alt="" class="md:object-contain md:h-8">
+
+            <nav class="md:gap-8 md:flex md:flex-row hidden">
+                <ul class="flex gap-5">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                </ul>
+            </nav>
+
+            <div class="lg:hidden">
+                <img src="./assets/images/icon-menu.svg" alt="">
             </div>
-        </main>
-        <aside class="text-red-50 flex flex-col justify-center gap-7 bg-black md:relative md:top-[70px] md:mb-[4rem] md:box-border">
-            <h1 class="text-orange-400 text-2xl ml-[5%] mb-0">New</h1>
-            <div class="w-4/5 text-2xl relative left-[5%] m-0">
-                <h2>Hydrogen VS Electric Cars</h2>
-                <p class="opacity-20">Will hydrogen-fueled cars ever catch up to EVS?</p>
-            </div>
-            <hr class="w-[10%] relative right-[10%]">
-            <div class="w-4/5 text-2xl relative left-[5%] m-0">
-                <h2>The Downsides of AI Artistry</h2>
-                <p class="opacity-20">What are the possible adverse effects of on-demand AI image 
-                    generation??</p>
-            </div>
-            <hr class="w-[10%] relative right-[10%]">
-            <div class="w-4/5 text-2xl relative left-[5%] m-0">
-                <h2>Is VC Funding Drying Up?</h2>
-                <p class="opacity-20">Private funding by VC firms is down 50% YOY. We take a look at what
-                    that means.</p>
-            </div>
-            <hr class="w-[10%] relative right-[10%]">
-        </aside>
-        <footer class="flex flex-row m-0 p-0">
-            <div class="flex">
-                <figure  class="h-[80%] w-[90%] bg-purple-50">
-                    <img src="/assets/images/image-retro-pcs.jpg" alt=""height="200" width="200" class="h-[100%] w-[100%]">
+        </header>
+        
+        
+        <section class="flex flex-col  lg:flex lg:flex-row lg:gap-6">
+            <main class="flex lg:flex lg:flex-col flex-col">
+                <figure class="">
+                    <img src="./assets/images/image-web-3-desktop.jpg" alt="">
                 </figure>
+                <!-- insidemain -->
+                <div class="flex flex-col lg:flex lg:flex-row lg:gap-20">
+                    <div class="writeup bg-white m-0 md:flex md:flex-col text-black flex flex-row">
+                        <h2 class="">The Bright <br>Future of <br> Web 3?</h2>
+                    </div>
+                    <div class="writeupp ">
+                        <p class="flex flex-col justify-items-center m-0 leading-10 box-border text-sm">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p> 
+                        <h1 class="inline text-base w-4/5">
+                            <a href="#" class="decoration-0 text-white bg-red-600 p-y-4 inline w-2/5 text-2xl">READ MORE</a>
+                          </h1> 
+                    </div>
+                </div>
+            </main>
+            <aside class="text-red-50 flex flex-col justify-center gap-7 bg-black">
+                <h1 class="text-orange-400 ">New</h1>
+                <div>
+                    <h2>Hydrogen VS Electric Cars</h2>
+                    <p class="opacity-20">Will hydrogen-fueled cars ever catch up to EVS?</p>
+                </div>
+                <hr class="">
+                <div class="">
+                    <h2>The Downsides of AI Artistry</h2>
+                    <p class="opacity-20">What are the possible adverse effects of on-demand AI image 
+                        generation??</p>
+                </div>
+                <hr class="">
+                <div class="">
+                    <h2>Is VC Funding Drying Up?</h2>
+                    <p class="opacity-20">Private funding by VC firms is down 50% YOY. We take a look at what
+                        that means.</p>
+                </div>
+                <hr class="">
+            </aside>
+        </section>
+        <footer class="flex flex-col lg:flex-row gap-5">
+            <div class="flex gap-5">
+                
+                <img src="./assets/images/image-retro-pcs.jpg" alt=""height="" width="100" class="">
                 <div>
                     <h1 class="text-3xl opacity-20">01</h1>
-                    <h2 class="text-2xl">Reviving Retro PCs</h2>
-                    <p class="opacity-20">what happens when old PCs are given modern upgrades?</p>
+                    <h2 class="text">Reviving Retro PCs</h2>
+                    <p class="opacity-16">what happens when old PCs are given modern upgrades?</p>
                 </div>
             </div>
-            <footer class="flex flex-row m-0 p-0">
-                <div class="flex">
-                    <figure  class="h-[80%] w-[90%] bg-purple-50">
-                        <img src="/assets/images/image-top-laptops.jpg" alt=""height="200" width="200" class="h-[100%] w-[100%]">
-                    </figure>
-                    <div>
-                        <h1 class="text-3xl opacity-20">02</h1>
-                        <h2 class="text-2xl">Top 10 Laptops of 2022</h2>
-                        <p class="opacity-20">Our best pack for various needs and budgets</p>
-                    </div>
+            
+            <div class="flex gap-5">
+                
+                <img src="./assets/images/image-top-laptops.jpg" alt=""height="" width="100" class="">
+                
+                <div>
+                    <h1 class="text-3xl opacity-20">02</h1>
+                    <h2 class="text-2xl">Top 10 Laptops of 2022</h2>
+                    <p class="opacity-16">Our best pack for various needs and budgets</p>
                 </div>
-                <footer class="flex flex-row m-0 p-0">
-                    <div class="flex">
-                        <figure  class="h-[80%] w-[90%] bg-purple-50">
-                            <img src="/assets/images/image-gaming-growth.jpg" alt=""height="200" width="200" class="h-[100%] w-[100%]">
-                        </figure>
-                        <div>
-                            <h1 class="text-3xl opacity-20">03</h1>
-                            <h2 class="text-2xl">The Growth of Gaming</h2>
-                            <p class="opacity-20">How the pandemic has sparkled fresh opportunities</p>
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="flex gap-5">
+                
+                <img src="./assets/images/image-gaming-growth.jpg" alt=""height="" width="100" class="">
+                
+                <div>
+                    <h1 class="text-3xl opacity-20">03</h1>
+                    <h2 class="text-2xl">The Growth of Gaming</h2>
+                    <p class="opacity-16">How the pandemic has sparkled fresh opportunities</p>
+                </div>
+            </div>
             
         </footer>
     </div>
